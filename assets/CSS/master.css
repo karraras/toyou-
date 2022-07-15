@@ -1,0 +1,46 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div {
+  background: #ddd;
+  padding: 20px;
+  margin: 50px;
+  width: 600px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.top::after,
+.right::after,
+.bottom::after,
+.left::after {
+  position: absolute;
+  content: "";
+  border: solid 15px;
+}
+
+.top::after {
+  border-color: transparent transparent #ddd transparent;
+  top: -30px;
+  left: 50%;
+}
+.right::after {
+  border-color: transparent transparent transparent #ddd;
+  top: 18px;
+  left: 100%;
+}
+.bottom::after {
+  border-color: #ddd transparent transparent;
+  top: 67px;
+  left: 50%;
+}
+.left::after {
+  border-color: transparent #ddd transparent transparent;
+  top: 18px;
+  left: -5%;
+}
